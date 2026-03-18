@@ -1,0 +1,54 @@
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'UnifrakturMaguntia', cursive;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif;
+    background-color: #f9f9f9;
+}
+
+nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+
+}
+
+ul li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 25%;
+}
+
+ul li a:hover {
+    background-color: #111111;
+}
+
+ul li a.active {
+    background-color: #19701d;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
