@@ -3,7 +3,7 @@ header {
     color: white;
     padding: 10px;
     text-align: center;
-    font-family: 'UnifrakturMaguntia', cursive;
+    font-family: 'UnifrakturMaguntia', 'Times New Roman', serif;
 }
 body {
     margin: 0;
@@ -25,7 +25,6 @@ ul {
     background-color: #333333;
     display: flex;
     justify-content: center;
-
 }
 
 ul li a {
@@ -43,6 +42,26 @@ ul li a:hover {
 ul li a.active {
     background-color: #19701d;
 }
+
+div.flex-container {
+    display: flex;
+    flex-direction: row; /* Three columns for desktop view */ 
+}
+
+div.flex-container > div {
+    margin: 10px;
+    flex: 1; /* Each column takes equal space */
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    div.flex-container {
+        flex-direction: column; /* Stack columns for mobile view */
+    }
+}
+
+
+
 
 footer {
     position: fixed;
