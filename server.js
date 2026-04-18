@@ -1,3 +1,11 @@
+/**
+ * @file server.js
+ * @description Express application entry point. Serves static files from `public/`
+ * and mounts all API routes under `/api`.
+ * @module server
+ * @author Jordan Kelley
+ */
+
 const express = require('express');
 const path = require('path');
 

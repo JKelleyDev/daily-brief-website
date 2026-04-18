@@ -6,14 +6,12 @@
     <meta name="description" content="Current weather conditions, forecasts, and alerts for your area.">
     <meta name="keywords" content="weather, forecast, conditions, alerts, temperature, humidity, wind">
     <meta name="author" content="Jordan Kelley">
-    <meta http-equiv="refresh" content="30">
     <title>Weather | The Daily Brief</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
-
 
 <body>
 <header>
@@ -28,4 +26,41 @@
         <li><a href="./about.html">About</a></li>
     </ul>
 </nav>
+
+<div class="weather-detail">
+
+    <section id="current-conditions">
+        <h2>Current Conditions</h2>
+        <p id="detail-temp">--°F</p>
+        <p id="detail-feels-like">Feels like --°F</p>
+        <p id="detail-humidity">Humidity: --%</p>
+        <p id="detail-cloud">Cloud Cover: --%</p>
+        <p id="detail-precip">Precipitation: -- in</p>
+        <p id="detail-rain">Rain: -- in</p>
+        <p id="detail-showers">Showers: -- in</p>
+        <p id="detail-wind-speed">Wind: -- mph</p>
+        <p id="detail-wind-dir">Wind Direction: --</p>
+        <p id="detail-wind-gusts">Wind Gusts: -- mph</p>
+        <p id="detail-updated">Last updated: --</p>
+    </section>
+
+    <section id="forecast">
+        <h2>7-Day Forecast</h2>
+        <div id="forecast-cards">
+            <p>Loading forecast...</p>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 The Daily Brief — Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a></p>
+    <p>Created and maintained by JKelleyDev</p>
+    <p><a href="https://github.com/JKelleyDev/daily-brief-website.git" target="_blank" rel="noopener noreferrer">View Source Code</a></p>
+</footer>
+
+<script src="../js/weather.js"></script>
+<script src="../js/weather-detail.js"></script>
+<script src="../js/geolocation.js"></script>
 </body>
+</html>

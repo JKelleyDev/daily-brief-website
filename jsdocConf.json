@@ -1,0 +1,51 @@
+{
+  "tags": {
+    "allowUnknownTags": true,
+    "dictionaries": ["jsdoc", "closure"]
+  },
+  "source": {
+    "include": ["server.js", "middleware.js", "routes", "public/js"],
+    "includePattern": ".+\\.js(doc)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "includeDate": false
+    }
+  },
+  "opts": {
+    "template": "./node_modules/clean-jsdoc-theme",
+    "encoding": "utf8",
+    "destination": "./out/docs",
+    "recurse": true,
+    "readme": "README.md"
+  },
+  "clean-jsdoc-theme-opts": {
+    "title": "Daily Brief Docs",
+    "codepen": false,
+    "search": true,
+    "menu": [
+      {
+        "title": "GitHub",
+        "link": "https://github.com/JKelleyDev/daily-brief-website",
+        "target": "_blank"
+      }
+    ],
+    "default_theme": "light",
+    "sections": [
+      "Modules",
+      "Classes",
+      "Functions",
+      "Global"
+    ]
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": false
+  }
+}

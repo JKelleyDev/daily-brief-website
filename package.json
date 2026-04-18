@@ -18,10 +18,17 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node --watch server.js",
+    "docs": "jsdoc -c jsdocConf.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "@vercel/edge": "^0.1.2",
-    "express": "^5.2.1"
+    "docdash": "^2.0.2",
+    "express": "^5.2.1",
+    "openmeteo": "^1.2.3"
+  },
+  "devDependencies": {
+    "clean-jsdoc-theme": "^4.3.0",
+    "jsdoc": "^4.0.5"
   }
 }
